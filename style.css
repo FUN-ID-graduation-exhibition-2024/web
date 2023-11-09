@@ -1,0 +1,27 @@
+/*
+Theme Name: sotsuten2024
+Author: akiramaeda
+Description: テーマの説明
+Version: 1.0
+*/
+
+@charset "UTF-8";
+header {
+    height: 100vh;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.title {
+    position: absolute;
+    left: 44px;
+    bottom: 52px;
+    width: 667px;
+}
+
+main {
+    height: 1500px;
+}

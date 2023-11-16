@@ -1,7 +1,7 @@
 # Web  
 
 ## header.php  
-<head>情報があります  
+<head>情報があります　　
 ※headingはないです
 
 ## index.php  

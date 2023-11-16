@@ -6,22 +6,62 @@ Version: 1.0
 */
 
 @charset "UTF-8";
+
+@font-face {
+  font-family: "genshin";
+  src: url("fonts/GenShinGothic-Heavy.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+}
+
+h2 {
+  display: inline-block;
+}
+
+.graphic01 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 1168px;
+}
+
 header {
-    height: 100vh;
-    position: relative;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 320px;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 .title {
-    position: absolute;
-    left: 44px;
-    bottom: 52px;
-    width: 667px;
+  position: absolute;
+  left: 44px;
+  bottom: 52px;
+  width: 667px;
 }
 
 main {
-    height: 1500px;
+  height: 1500px;
+}
+
+.section {
+  width: 854px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.subtitle {
+  width: 192px;
 }

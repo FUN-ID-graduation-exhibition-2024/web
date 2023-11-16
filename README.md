@@ -1,11 +1,11 @@
 # Web  
 
 ## header.php  
-<head>情報があります    
+<head>情報があります<br>
 ※headingはないです
 
 ## index.php  
-メインページがあります  
+メインページがあります
 
 ## footer.php  
 <footer>があります

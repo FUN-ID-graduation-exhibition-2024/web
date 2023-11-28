@@ -14,17 +14,148 @@ Version: 1.0
   font-style: normal;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
   position: relative;
 }
 
-h2 {
+header {
+  height: 100vh;
+  position: relative;
+  margin-bottom: 320px;
+}
+
+h3 {
+  font-size: 3rem;
+  /* display: inline-block; */
+}
+
+p {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: underline black;
+  color: black;
+}
+
+img {
+  height: 100%;
+}
+
+i:hover {
+  -webkit-animation-name: fa-spin;
+  animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+  animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+  animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(
+    --fa-animation-iteration-count,
+    infinite
+  );
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+  animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+    animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+    animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+
+/* ↑全体css */
+
+.text__center {
+  text-align: center;
+}
+
+.text__left {
+  text-align: left;
+}
+
+.font__16 {
+  font-size: 1.6rem;
+}
+
+.font__20 {
+  font-size: 2rem;
+}
+
+.font__30 {
+  font-size: 3rem;
+}
+
+.font__32 {
+  font-size: 3.2rem;
+}
+
+.font__36 {
+  font-size: 3.6rem;
+}
+
+.font__normal {
+  font-weight: normal !important;
+}
+
+.inline-block {
   display: inline-block;
 }
+
+.line-height__normal {
+  line-height: normal !important;
+}
+
+.line-height__48 {
+  line-height: 48px;
+}
+
+.line-height__54 {
+  line-height: 54px;
+}
+
+/* 機能css */
 
 .graphic01 {
   position: absolute;
@@ -34,13 +165,30 @@ h2 {
   width: 1168px;
 }
 
-header {
-  height: 100vh;
-  position: relative;
-  margin-bottom: 320px;
+.graphic01 > img {
+  width: 100%;
 }
 
-img {
+.graphic02 {
+  position: absolute;
+  top: 1600px;
+  z-index: -1;
+  width: 1055px;
+}
+
+.graphic02 > img {
+  width: 100%;
+}
+
+.graphic03 {
+  position: absolute;
+  top: 3145px;
+  right: 0;
+  z-index: -1;
+  width: 1120px;
+}
+
+.graphic03 > img {
   width: 100%;
 }
 
@@ -51,17 +199,57 @@ img {
   width: 667px;
 }
 
-main {
-  height: 1500px;
-}
-
 .section {
   width: 854px;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 76px;
+  text-align: center;
+}
+
+.section:last-child {
+  margin-bottom: 176px;
 }
 
 .subtitle {
-  width: 192px;
+  display: block;
+  height: 38px;
+  margin: 0 auto;
+  margin-bottom: 13px;
+  display: inline-block;
+}
+
+.section__content {
+  border: 4px solid;
+  border-image: linear-gradient(#ea5e9d, #f18702, #fff799, #4e83a4, #c1d613) 1;
+  background: linear-gradient(90deg, #FFF 34.9%, rgba(255, 255, 255, 0.63) 66.67%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.subsubtitle {
+  margin-top: 52px;
+  margin-bottom: 28px;
+}
+
+.section__text {
+  display: inline-block;
+  margin-top: 52px;
+  margin-bottom: 52px;
+  font-weight: bold;
+}
+
+.attention {
+  margin-top: 46px;
+}
+
+.sns {
+  width: 430px;
+  height: 158px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.funlogo {
+  height: 34px;
+  margin-bottom: 140px;
 }

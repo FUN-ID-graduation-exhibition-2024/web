@@ -1,14 +1,14 @@
 # Web  
 
 ## header.php  
-<head>情報があります<br>
-※headingはないです
+head情報があります<br>
+※headerはないです
 
 ## index.php  
 メインページがあります
 
 ## footer.php  
-<footer>があります
+footerがあります
 
 ## style.css  
 cssはここに
